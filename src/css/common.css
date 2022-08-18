@@ -4,7 +4,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,'Rubik Dirt',
+      cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -15,4 +16,62 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+.color-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  z-index: -1;
+}
+
+.color-buttons button {
+  appearance: none;
+  font-family: 'Rubik Dirt', cursive ;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  
+  border: 2px solid yellow;
+  color: blue;
+  opacity: 0,5;
+}
+
+/* timer styles */
+.timer {
+  display: flex;
+  gap: 30px;
+  padding: 100px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.value { 
+  font-size: 50px;
+  font-family: 'Rubik Dirt', monospace;
+  color:blue;
+  
+}
+
+.label {
+  color: yellowgreen;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 20px;
+}
+.form{
+font-family: 'Rubik Dirt', cursive;
+}
+.form button{
+font-family: 'Rubik Dirt', cursive;
+border: 1px solid;
 }
